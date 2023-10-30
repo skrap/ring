@@ -325,7 +325,7 @@ fn ring_build_rs_main() {
     // as errors. Since warnings are highly compiler-dependent and compilers
     // don't maintain backward compatibility w.r.t. which warnings they issue,
     // don't do this for packaged builds.
-    let force_warnings_into_errors = is_git;
+    let force_warnings_into_errors = false;
 
     let target = Target {
         arch,
